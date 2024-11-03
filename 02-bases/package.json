@@ -8,7 +8,7 @@
     "build:github": "npm run build:delete && npm run build:href && npm run build:copy",
     "build:delete": "if exist docs (rmdir /S /Q docs)",
     "build:href": "ng build --base-href ./",
-    "build:copy": "xcopy dist\\bases ..\\docs\\ /E /I /Y"
+    "build:copy": "xcopy dist\\bases\\browser ..\\docs\\ /E /I /Y"
   },
   "private": true,
   "dependencies": {
